@@ -1,0 +1,82 @@
+<body>
+	<!--section>
+        <div class="header">
+            <img src="/assets/images/wandxlogo.png" alt="">
+            <div class="userName">
+                <div class="dropdown">
+                    <img class="dropbtn" onclick="myFunction() " src="/assets/images/user.jpg" alt="">
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+                <p>User Name</p>
+            </div>
+            <div class="faq-tabs">
+                <button class="tablinks active">
+                    <a href="#tab1">Create Token2</a>
+                </button>
+            </div>
+        </div>
+    </section-->
+    <div class="tabcontent">
+        <div id="tab1" class="tab active">
+          <section class="create-token-holder">
+              <div class="token-panel-holder">
+                <form>
+                    <div class="basic-ip">Basic Inputs</div>
+                    <div class="basic-ip-holder">
+                      <label class="form-label">Token name</label>
+                      <input  class="form-input-holder" type="text" placeholder="Token name" >
+                    </div>
+                    <div class="basic-ip-holder">
+                      <label class="form-label">Contract Address</label>
+                      <input  class="form-input-holder" type="text" placeholder="Address" >
+                    </div>
+                    <div class="basic-ip-holder">
+                      <label class="form-label">Token Value</label>
+                      <input  class="form-input-holder" type="number" placeholder="Number of tokens per ether" >
+                    </div>
+                    <div class="basic-ip-holder time-holder">
+                      <label class="form-label">Start Date/Time</label>
+                      <span class="calendar-holder">
+                        <input  class="form-input-holder time-ip" type="text" placeholder="Start Date/Time" >
+                        <img src="/assets/images/calendar.png" alt="calendar" height="24" width="24">
+                      </span>
+                      <label class="form-label time-label">End Date/Time</label>
+                      <span class="calendar-holder">
+                        <input  class="form-input-holder" type="text" placeholder="End Date/Time" >
+                        <img src="/assets/images/calendar.png" alt="calendar" height="24" width="24">
+                      </span>
+                    </div>
+                    <div class="basic-ip-holder">
+                      <label class="form-label">Ether Cap</label>
+                      <input  class="form-input-holder" type="number" placeholder="Max ether to be raised" >
+                    </div>
+                    <!-- <div class="basic-ip-holder bonus-holder">
+                      <label class="form-label">Bonus 1</label>
+                      <input  class="form-input-holder" type="number" placeholder="Bonus in percentage" >
+                      <input  class="form-input-holder" type="number" placeholder="Bonus 1 time in hours" >
+                    </div> -->
+                    <div id="dynamicInput" class="basic-ip-holder bonus-holder">
+                      <label class="form-label">Bonus 1</label>
+                      <input  class="form-input-holder" type="number"  placeholder="Bonus in percentage" >
+                      <input  class="form-input-holder" type="number" placeholder="Bonus 2 time in hours" >
+                      <div class="close-holder" onClick="removeBonus('closediv');">
+                      </div>
+                    </div>
+                    <div class="basic-ip-holder align-btn">
+                      <button class="confirm-btn " type="button" onClick="addInput('dynamicInput');">Add</button>
+                   </div>
+                    <div class="basic-ip-holder align-btn">
+                      <button class="confirm-btn " type="button">Submit
+                        <i class="right-arrow"></i>
+                      </button>
+                   </div>
+                </form>
+              </div>
+          </section>
+        </div>
+    </div>
+</body>

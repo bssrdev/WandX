@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--div style="text-align:center;background-color: #134351">
+  <h1>
+    Welcome to {{ title }}
+  </h1>
+  <img width="100" alt="WandX Logo" src="https://www.wandx.co/images/wandx.png">
+</div-->
+
+<body>
+	<section>
+        <div class="header">
+            <img src="/assets/images/wandxlogo.png" alt="">
+            <div class="userName">
+                <div class="dropdown">
+                    <img class="dropbtn" onclick="myFunction() " src="/assets/images/user.jpg" alt="">
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+                <p>User Name</p>
+            </div>
+            <div>
+				<ul>
+					<li><a routerLink="createtoken">Create Token</a></li>
+					<li><a routerLink="tokentrade">Token Trade</a></li>
+				</ul>
+			</div>
+        </div>
+    </section>
+</body>
+
+
+<!--div>
+	<ul>
+		<li><a routerLink="createtoken">Create Token</a></li>
+		<li><a routerLink="tokentrade">Token Trade</a></li>
+	</ul>
+</div-->
+<!--app-createtoken></app-createtoken-->
+
+<router-outlet></router-outlet>
